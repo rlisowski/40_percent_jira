@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "40% wide JIRA task details column",
+  "description": "This extension will force JIRA task details column to have 40% width on large screens",
+  "version": "1.0",
+
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+
+  "browser_action": {
+   "default_icon": "icon32.png"
+  },
+  "permissions": ["https://*.atlassian.net/"],
+
+  "content_scripts": [ {
+    "css": [ "jira.css" ],
+    "matches": [ "https://*.atlassian.net/*" ]
+  } ]
+}

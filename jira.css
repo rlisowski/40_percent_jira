@@ -1,0 +1,23 @@
+/* ----------- Non-Retina Screens ----------- */
+
+@media screen and (min-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  #ghx-work #ghx-detail-view {
+    width: 40% !important;
+  }
+
+  #ghx-plan #ghx-detail-view {
+    width: 40% !important;
+  }
+}
+
+/* ----------- Retina Screens ----------- */
+
+@media screen and (min-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  #ghx-work #ghx-detail-view {
+    width: 40% !important;
+  }
+
+  #ghx-plan #ghx-detail-view {
+    width: 40% !important;
+  }
+}
